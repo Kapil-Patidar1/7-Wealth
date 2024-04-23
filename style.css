@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rethink Sans", sans-serif;
+}
+
+nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: rgb(25,22,31);
+    color: white;
+    padding-inline: 60px;
+}
+
+.nav-1{
+    display: flex;
+    align-items: center;
+    font-family: "Merriweather", serif;
+}
+
+.nav-1 img{
+    height: 50px;
+}
+
+.nav-2{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pr-1{
+    color: rgb(184,219,135);
+}
+
+.nav-3{
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-3 button{
+    height: 40px;
+    width: 90px;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid rgb(184,219,135);
+    cursor: pointer;
+}
+
+.nav-4{
+    display: none;
+}
+
+.border{
+    background-color: rgb(25,22,31);
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    width: 90%;
+}
+
+.features{
+    background-color: rgb(25,22,31);
+}
+
+.features h1{
+    padding-block: 20px;
+    font-size: 60px;
+    padding-top: 40px;
+    padding-left: 200px;
+    background-color: rgb(25,22,31);
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+}
+
+#p{
+    color: #B8DB87;
+}
+
+#f{
+    color: #F0BFB1;
+}
+
+.features p{
+    width: 50%;
+    padding-left: 200px;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.features p span{
+    color: white;
+    font-weight: 500;
+}
+
+
+.card{
+    width: 100%;
+    min-height: 75vh;
+    background-color: rgb(25,22,31);
+    color: white;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-1{
+    width: 23%;
+    height: 65vh;
+    background-color: #F9F5F4;
+    color: black;
+    border-radius: 1px solid black;
+    padding-left: 20px;
+    padding-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content{
+    height: 45vh;
+    flex-direction: column;
+}
+
+.card-1 h2{
+    border-bottom: 1px solid rgb(94, 94, 94);
+    padding-bottom: 10px;
+    width: 90%;
+    font-size: 40px;
+    font-family: "Merriweather", serif;
+}
+
+.card-1 p{
+    padding-block: 10px;
+    font-size: 15px;
+ }
+ 
+ .card-1 div{
+     height: 30px;
+     width: 30px;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+ }
+ .card-1 span{   
+     width: 90%; 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-bottom: 1px solid rgb(94, 94, 94);
+ }
+
+ .card-1 span:first-child{
+     border-bottom: none;
+     padding-bottom: 20px;
+ }
+
+ .btn-1{
+    color: #F9F5F4;
+    background-color: rgb(27, 25, 25);
+    width: 106px;
+    height: 25px;
+    border: none;
+    font-size: 11px;
+    border-radius: 10px;
+}
+
+.btn-2{
+    color: white;
+    background-color: rgb(27, 25, 25);
+    width: 35vh;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-1:nth-child(2){
+    background-color: #B8DB87;
+}
+
+.card-1:last-child{
+    background-color: #F0BFB1;
+}
+
+
+@media (max-width:768px){
+
+    .nav-2{
+        display: none;
+    }
+
+    .nav-3{
+        display: none;
+    }
+
+    .nav-4{
+        display: flex;
+    }
+
+    .features h1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 70px;
+    }
+
+    .features p{
+        width: 100%;
+        padding-inline: 70px;
+        text-align: center;
+    }
+
+    .card{
+        width: auto;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1{
+        width: 45%;
+        height: 80vh;
+    }
+
+}
